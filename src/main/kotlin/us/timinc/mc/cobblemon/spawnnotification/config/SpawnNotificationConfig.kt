@@ -15,6 +15,8 @@ class SpawnNotificationConfig {
     val broadcastCoords = true
 //    @Comment("Whether or not to broadcast the biome")
     val broadcastBiome = false
+//    @Comment("Whether or not to show the name of the pokemon")
+    val broadcastName = true
 //    @Comment("Whether or not to play the PLA shiny sound when a shiny spawns")
     val playShinySound = true
 //    @Comment("Whether or not to play the PLA shiny sound when a player sends out a shiny")
