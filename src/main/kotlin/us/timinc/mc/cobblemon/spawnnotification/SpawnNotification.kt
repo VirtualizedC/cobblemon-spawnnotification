@@ -57,7 +57,10 @@ object SpawnNotification : ModInitializer {
             else -> return
         }
 
-        var messageComponent = Text.translatable(message, pokemonName)
+        var messageComponent = Text.translatable(message, "Pokémon")
+        if (config.broadcastName) {
+            var messageComponent = Text.translatable(message, pokemonName)
+        }
         val pos = evt.ctx.position
         if (config.broadcastCoords) {
             messageComponent = messageComponent.append(
